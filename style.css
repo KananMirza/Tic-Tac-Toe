@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+table {
+    margin: auto;
+}
+
+table,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td {
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: rgb(231, 229, 229);
+}
+
+div {
+    width: 420px;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 120px;
+    left: 550px;
+}
+
+p {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    position: absolute;
+    left: 720px;
+    cursor: pointer;
+}
+#reset{
+    background-color: blueviolet;
+    top: 120px;
+}
+#refresh{
+    background-color: black;
+    top:80px;
+    display: none;
+    position: absolute;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 40px;
+}
+
+@media screen and (max-width: 600px) {
+    div {
+        left: 20px;
+        top: 70px;
+        justify-content: flex-start;
+    }
+
+    button {
+        left: 140px;
+        top: 65px;
+    }
+    #refresh{
+        top: 40px;
+    }
+    #reset{
+       
+        top: 80px;
+    }
+    p{
+        margin-left: 20px;
+        margin-right: 130px;
+        font-size: 20px;
+        width: 100px;
+    }
+    
+    td {
+        width: 100px;
+        height: 100px;
+    }
+
+    table {
+        position: absolute;
+        top: 120px;
+        left: 40px;
+    }
+}
